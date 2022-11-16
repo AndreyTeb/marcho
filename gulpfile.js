@@ -101,6 +101,6 @@ exports.watching = watching;
 exports.images = images;
 exports.nunjucks = nunjucks;
 exports.cleanDist = cleanDist;
-exports.build = gulp.series(cleanDist, images, build);
 
+exports.build = gulp.series(cleanDist, images, build);
 exports.default = gulp.parallel(nunjucks, styles, scripts, browsersync, watching);
